@@ -32,14 +32,6 @@ export const Form = styled.form`
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 
-  .inputs {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-
   > h1 {
     font-size: 48px;
     color: ${({ theme }) => theme.COLORS.WHITE};
@@ -63,6 +55,8 @@ export const Form = styled.form`
   }
 
   > a {
-    margin-top: 30px;
+    text-decoration: none;
+    color: wheat;
+    margin-top: 20px;
   }
 `;

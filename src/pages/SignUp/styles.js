@@ -34,10 +34,9 @@ export const Form = styled.form`
 
   .inputs {
     width: 100%;
-    height: 500px;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
   }
 
   > h1 {

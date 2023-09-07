@@ -11,7 +11,7 @@ export function Home() {
       <Content>
         <h2>Meus jogos</h2>
         <div>
-          <Button title={"Adicionar jogo"} icon={FiPlus} />
+          <Button title={"Adicionar jogo"} icon={FiPlus} path={"/new"} />
         </div>
       </Content>
 

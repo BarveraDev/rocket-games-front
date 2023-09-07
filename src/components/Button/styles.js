@@ -24,7 +24,17 @@ export const Container = styled.button`
     isDelete ? theme.COLORS.WHITE : theme.COLORS.GRADIENT};
 
   > svg {
-    margin-left: 20px;
+    margin-left: 5px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 0.5em;
+    width: 100%;
+    height: 30px;
   }
 
   &:hover {

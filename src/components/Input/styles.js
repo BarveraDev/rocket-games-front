@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
+  margin-bottom: 0.5em;
   padding-left: 16px;
   border-radius: 5px;
   background-color: ${({ theme }) => theme.COLORS.GRAY_300};

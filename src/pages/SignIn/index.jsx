@@ -1,8 +1,8 @@
 import { BackgroundNeon, Form } from "./styles";
-import { FiArrowRight, FiMail, FiLock } from "react-icons/fi";
-
+import { FiArrowRight, FiArrowLeft, FiMail, FiLock } from "react-icons/fi";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
+import { ButtonWithText } from "../../components/ButtonWithText";
 
 export function SignIn() {
   return (
@@ -14,14 +14,12 @@ export function SignIn() {
 
         <h2>Faça seu login</h2>
 
-        <div className="inputs">
-          <Input icon={FiMail} placeholder="E-mail" />
-          <Input icon={FiLock} placeholder="Password" />
-        </div>
+        <Input icon={FiMail} placeholder="E-mail" />
+        <Input icon={FiLock} placeholder="Password" />
 
-        <Button title={"Entrar"} icon={FiArrowRight} />
+        <Button title={"Entrar"} icon={FiArrowRight} path={"/home"} />
 
-        <a to="">Criar conta</a>
+        <ButtonWithText title={"Criar conta"} path="/register" />
       </Form>
     </div>
   );

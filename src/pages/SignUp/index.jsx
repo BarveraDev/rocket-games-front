@@ -21,18 +21,16 @@ export function SignUp() {
 
         <h2>Crie sua conta</h2>
 
-        <div className="inputs">
-          <Input icon={FiUser} type="name" placeholder="Nome" />
-          <Input icon={FiMail} type="email" placeholder="E-mail" />
-          <Input icon={FiLock} type="password" placeholder="Password" />
-        </div>
+        <Input icon={FiUser} type="name" placeholder="Nome" />
+        <Input icon={FiMail} type="email" placeholder="E-mail" />
+        <Input icon={FiLock} type="password" placeholder="Password" />
 
-        <Button title={"Cadastrar"} icon={FiArrowRight} />
+        <Button title={"Cadastrar"} icon={FiArrowRight} path={"/login"} />
 
         <ButtonWithText
           title={"Voltar para tela de login"}
           icon={FiArrowLeft}
-          to="/register"
+          path="/login"
         />
       </Form>
     </div>

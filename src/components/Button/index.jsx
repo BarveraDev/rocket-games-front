@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { Container } from "./styles";
 
-export function Button({ title, icon: Icon, isDelete, ...rest }) {
+export function Button({ title, icon: Icon, isDelete, path, ...rest }) {
   return (
     <Container
       type="button"
@@ -8,8 +9,10 @@ export function Button({ title, icon: Icon, isDelete, ...rest }) {
       {...rest}
       className={isDelete ? "button-save" : "button-delete"}
     >
-      {title}
-      {Icon && <Icon size={20} />}
+      <Link to={path}>
+        {title}
+        {Icon && <Icon size={20} />}
+      </Link>
     </Container>
   );
 }
