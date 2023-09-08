@@ -12,8 +12,10 @@ export function NewGame() {
       <Header />
       <Section>
         <div className="top">
-          <FiArrowLeft className="arrow" />
-          <a href="">Voltar</a>
+          <a href="/">
+            <FiArrowLeft className="arrow" />
+            Voltar
+          </a>
         </div>
 
         <h2>Novo Jogo</h2>

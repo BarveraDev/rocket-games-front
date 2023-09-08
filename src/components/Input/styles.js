@@ -17,7 +17,7 @@ export const Container = styled.div`
     padding-right: 15px;
 
     &::placeholder {
-      color: ${({ theme }) => theme.COLORS.WHITE};
+      color: gray;
     }
   }
 

@@ -13,6 +13,7 @@ export const Header = styled.header`
   height: 20vh;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding-left: 15em;
   > a {
     align-items: center;
     margin-left: 10em;

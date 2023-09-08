@@ -2,8 +2,12 @@ import { Container, Profile, Brand } from "./styles";
 import { FiSearch } from "react-icons/fi";
 import { Input } from "../../components/Input";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../hooks/auth";
 
 export function Header() {
+  const { signOut } = useAuth();
+  console.log(signOut);
+
   return (
     <Container>
       <Brand>
@@ -20,7 +24,7 @@ export function Header() {
       <Profile>
         <div>
           <span>Luiz Paulo</span>
-          <a>sair</a>
+          <a onClick={signOut}>sair</a>
         </div>
         <Link to="/profile">
           <img
