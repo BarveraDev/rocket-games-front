@@ -7,7 +7,7 @@ import { GamePreview } from "../pages/GamePreview";
 export function AppRoutes() {
   return (
     <Routes>
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/new" element={<NewGame />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/preview/:id" element={<GamePreview />} />

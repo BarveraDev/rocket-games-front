@@ -11,17 +11,17 @@ export const Container = styled.div`
 
   width: 60em;
   padding: 2em;
-
-  > a {
-    color: ${({ theme }) => theme.COLORS.WHITE};
-    text-decoration: none;
-  }
 `;
 
 export const Title = styled.a`
   font-size: 2em;
   margin-bottom: 0.5em;
   cursor: pointer;
+
+  > a {
+    color: ${({ theme }) => theme.COLORS.WHITE};
+    text-decoration: none;
+  }
 `;
 
 export const Description = styled.div`

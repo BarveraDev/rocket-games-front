@@ -24,7 +24,7 @@ export const Form = styled.form`
   flex-direction: column;
   padding: 20px 100px;
   max-width: 500px;
-  height: 500px;
+  height: 520px;
   width: 100%;
   background: rgba(25, 25, 25, 0.5);
   backdrop-filter: blur(15px);

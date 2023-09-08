@@ -7,7 +7,7 @@ export function Header() {
   return (
     <Container>
       <Brand>
-        <Link to="/home">rocketGames_</Link>
+        <Link to="/">rocketGames_</Link>
       </Brand>
 
       <Input
