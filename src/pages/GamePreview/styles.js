@@ -13,12 +13,10 @@ export const Container = styled.div`
 export const Movie = styled.div`
   grid-area: movie;
   padding: 3rem 12em 0 12em;
-
   a {
-    display: flex;
     color: aliceblue;
-    gap: 0.5rem;
-    margin-bottom: 2rem;
+    display: flex;
+    gap: 1em;
   }
 `;
 
@@ -70,4 +68,14 @@ export const TextField = styled.div`
   font-size: 14pt;
   line-height: 18pt;
   text-align: justify;
+  margin-bottom: 2em;
+`;
+
+export const Links = styled.div`
+  display: flex;
+  width: 100em;
+  justify-content: space-between;
+  align-items: center;
+  height: 2em;
+  margin-bottom: 5em;
 `;

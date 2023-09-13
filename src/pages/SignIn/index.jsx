@@ -5,6 +5,7 @@ import { ButtonWithText } from "../../components/ButtonWithText";
 import { BackgroundNeon, Form } from "./styles";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
+import { useNavigate } from "react-router-dom";
 
 import { useAuth } from "../../hooks/auth";
 
@@ -13,9 +14,11 @@ export function SignIn() {
   const [password, setPassword] = useState("");
 
   const { signIn } = useAuth();
+  const navigate = useNavigate();
 
   function handleSignIn() {
     signIn({ email, password });
+    navigate("/");
   }
 
   return (
@@ -40,12 +43,7 @@ export function SignIn() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <Button
-          title={"Login"}
-          icon={FiArrowRight}
-          path={"/"}
-          onClick={handleSignIn}
-        />
+        <Button title={"Login"} icon={FiArrowRight} onClick={handleSignIn} />
 
         <ButtonWithText title={"SignUp"} path="/" />
       </Form>

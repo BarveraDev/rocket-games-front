@@ -15,6 +15,8 @@ export const Content = styled.div`
   display: flex;
   align-items: end;
   justify-content: space-evenly;
+  align-items: center;
+  padding-top: 4em;
   width: 100%;
 
   > h2 {

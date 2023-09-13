@@ -50,10 +50,6 @@ export const Form = styled.form`
     margin: 50px 0 10px 0;
   }
 
-  > button {
-    margin-top: 50px;
-  }
-
   > a {
     text-decoration: none;
     color: wheat;

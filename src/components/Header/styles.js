@@ -37,6 +37,7 @@ export const Profile = styled.div`
       margin-left: 10px;
       border: 3px solid ${({ theme }) => theme.COLORS.WHITE};
       width: 5em;
+      height: 5em;
       border-radius: 50%;
     }
   }
