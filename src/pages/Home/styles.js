@@ -8,6 +8,10 @@ export const Container = styled.div`
     "content"
     "section";
   grid-template-rows: 105px 8rem 40em;
+
+  @media (max-width: 768px) {
+    grid-template-rows: 105px auto 40em;
+  }
 `;
 
 export const Content = styled.div`
@@ -23,6 +27,15 @@ export const Content = styled.div`
     font-size: 2em;
     display: flex;
     justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    > h2 {
+      font-size: 2.5em;
+    }
   }
 `;
 
