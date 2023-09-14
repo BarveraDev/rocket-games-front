@@ -55,4 +55,16 @@ export const Form = styled.form`
     color: wheat;
     margin-top: 20px;
   }
+
+  @media (max-width: 390px) {
+    max-width: 350px;
+    padding: 1em 3em;
+
+    > h1 {
+      font-size: 30px;
+    }
+    > p {
+      text-align: center;
+    }
+  }
 `;
