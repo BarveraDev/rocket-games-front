@@ -13,7 +13,7 @@ export const Header = styled.header`
   height: 20vh;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  padding-left: 15em;
+  padding-left: 2em;
   > a {
     align-items: center;
     margin-left: 10em;
@@ -35,6 +35,10 @@ export const Header = styled.header`
 export const Form = styled.form`
   max-width: 340px;
   margin: -6em auto 0;
+
+  @media (max-width: 390px) {
+    max-width: 300px;
+  }
 `;
 
 export const Avatar = styled.div`

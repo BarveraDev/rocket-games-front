@@ -61,7 +61,7 @@ export function GamePreview() {
       <Header />
       {data && (
         <Movie>
-          <Links className="teste">
+          <Links className="buttonsBackAndDelete">
             <a href="/">
               <FiArrowLeft />
               Voltar

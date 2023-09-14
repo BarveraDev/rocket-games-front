@@ -10,7 +10,6 @@ export const Container = styled.div`
 
 export const Section = styled.section`
   grid-area: section;
-  padding: 5rem 12em 0 12em;
 
   > h3 {
     font-size: 24px;
@@ -41,6 +40,16 @@ export const Section = styled.section`
     display: flex;
     gap: 2rem;
     margin-bottom: 3em;
+  }
+
+  @media (max-width: 390px) {
+    padding: 2em;
+  }
+  @media (min-width: 391px) {
+    padding: 5rem 2rem 0 2em;
+  }
+  @media (min-width: 1440px) {
+    padding: 2rem 12rem 0 12em;
   }
 `;
 

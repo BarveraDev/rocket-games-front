@@ -11,7 +11,5 @@ export default {
     GRAY_300: "#393E41",
 
     RED: "#B0413E",
-
-    GRADIENT: "linear-gradient(45deg, #485e84, #b4becf)",
   },
 };

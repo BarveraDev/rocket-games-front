@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: grid;
 
   grid-template-areas:
-    "header "
+    "header"
     "content"
     "section";
   grid-template-rows: 105px 8rem 40em;
@@ -30,6 +30,7 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
+    // Tablets
     flex-direction: column;
     text-align: center;
 
@@ -46,6 +47,10 @@ export const Section = styled.div`
   flex-direction: column;
 
   margin-top: 5%;
+
+  @media (max-width: 767px) {
+    width: 100vw;
+  }
 `;
 
 export const MovieSection = styled.div`
@@ -65,5 +70,9 @@ export const MovieSection = styled.div`
   &::-webkit-scrollbar-thumb:hover {
     background-color: ${({ theme }) =>
       theme.COLORS.BACKGROUND_3}; /* Cor do polegar ao passar o mouse */
+  }
+
+  @media (max-width: 767px) {
+    width: 80vw;
   }
 `;

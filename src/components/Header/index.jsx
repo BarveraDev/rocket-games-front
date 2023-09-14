@@ -25,12 +25,14 @@ export function Header() {
         <Link to="/">rocketGames_</Link>
       </Brand>
 
-      <Input
-        type="input"
-        icon={FiSearch}
-        placeholder="Pesquisar pelo título"
-        className="input"
-      />
+      <div className="divInput">
+        <Input
+          type="input"
+          icon={FiSearch}
+          placeholder="Pesquisar"
+          className="input"
+        />
+      </div>
 
       <Profile>
         <div>

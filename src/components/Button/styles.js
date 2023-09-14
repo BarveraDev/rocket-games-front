@@ -17,9 +17,9 @@ export const Container = styled.button`
   padding: 15px;
   border-radius: 10px;
   background-color: ${({ theme, isDelete }) =>
-    isDelete ? theme.COLORS.RED : theme.COLORS.GRADIENT};
+    isDelete ? theme.COLORS.RED : theme.COLORS};
   color: ${({ theme, isDelete }) =>
-    isDelete ? theme.COLORS.WHITE : theme.COLORS.GRADIENT};
+    isDelete ? theme.COLORS.WHITE : theme.COLORS.BACKGROUND_1};
 
   > svg {
     margin-left: 5px;

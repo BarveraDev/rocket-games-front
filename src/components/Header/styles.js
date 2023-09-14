@@ -10,29 +10,23 @@ export const Container = styled.header`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_1};
   padding: 0 2em 0 2em;
   position: fixed;
+  z-index: 100;
+
   > div {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
-  @media (min-width: 768px) {
-    gap: 2em;
-    .input {
-      width: 15em;
-    }
-  }
-  @media (min-width: 1440px) {
-    gap: 5em;
-    .input {
-      width: 50em;
-    }
+  .divInput {
+    width: 50%;
   }
 `;
 
 export const Profile = styled.div`
   display: flex;
   align-items: center;
-  width: 30em;
-  justify-content: flex-end;
 
   > div {
     display: flex;

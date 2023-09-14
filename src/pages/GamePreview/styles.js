@@ -8,15 +8,29 @@ export const Container = styled.div`
   grid-template-areas:
     "header"
     "movie";
+
+  .buttonsBackAndDelete {
+    width: 100%;
+  }
 `;
 
 export const Movie = styled.div`
   grid-area: movie;
-  padding: 3rem 12em 0 12em;
+  // padding: 3rem 12em 0 12em;
   a {
     color: aliceblue;
     display: flex;
     gap: 1em;
+  }
+
+  @media (max-width: 390px) {
+    padding: 2em;
+  }
+  @media (min-width: 391px) {
+    padding: 3rem 5em 0 5em;
+  }
+  @media (min-width: 1440px) {
+    padding: 3rem 12em 0 12em;
   }
 `;
 
