@@ -24,7 +24,7 @@ export const Movie = styled.div`
   }
 
   @media (max-width: 390px) {
-    padding: 2em;
+    padding: 1em;
   }
   @media (min-width: 391px) {
     padding: 3rem 5em 0 5em;
@@ -87,9 +87,9 @@ export const TextField = styled.div`
 
 export const Links = styled.div`
   display: flex;
-  width: 100em;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   height: 2em;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 `;
